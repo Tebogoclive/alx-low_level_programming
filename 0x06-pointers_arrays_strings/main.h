@@ -2,7 +2,7 @@
 #define MAIN_H
 #include <stdio.h>
 /**
-* void prototype()
+* void prototypes()
 * int prototypes()
 * char prototypes()
 */
@@ -20,4 +20,4 @@ char *rot13(char *);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 char *add_strings(char *n1,char *n2,char *r,int r_index);
 
-#endif/*MAIN_H*/
+#endif /*MAIN_H*/
