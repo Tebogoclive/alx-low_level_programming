@@ -1,34 +1,24 @@
 #include "main.h"
 
 /**
-* leet - Modifies a string to leet string
-* @s: The string input
-* Return: String modified
+* leet - encodes a string into 1337
+* @s: string to encode
+*
+* Return: adress 0f s
 */
 char *leet(char *s)
 {
-	char *p;
-	int a = 0, swap_count = 5;
-	char letter[5] = {'A', 'E', 'O'. 'T', 'L'};
-	char swap[5] = {'4', '3', '0', '7', '1'};
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	p = s;
-
-	while (*p != '\0')
+	for (i = 0; *(s + i); i++)
 	{
-		a = 0;
-
-		while (a < swap_count)
+		for (j = 0; j <= 9; j++)
 		{
-			if (*p == letter[a] || ((*p - 32) == letter[a]))
-			{
-				*p = swap[a];
-				break;
-			}
-			a++;
+			if (a[j] == *(s + 1))
+				*(s + i) = b[j];
 		}
-		p++;
 	}
-
 	return (s);
 }
