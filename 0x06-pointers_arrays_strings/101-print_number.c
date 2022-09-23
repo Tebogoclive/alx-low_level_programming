@@ -16,3 +16,16 @@ void print_number(int n)
 	}
 	print_uint((unsigned int) n);
 }
+
+/**
+* print_unit = Prints an unsigned integer
+* @n: The unsigned int to print
+*/
+
+viod print_unit(unsigned int n)
+
+{
+	if (n / 10 != 0)
+		print_uint(n / 10);
+	_putchar(n % 10 + '0');
+}
