@@ -3,7 +3,7 @@
 /**
  * main - Prints every argument it recieves
  * @argc: number of command line arguments
- * argv: array that contains the program command line
+ * @argv: array that contains the program command line
  * Return: 0 on success
  */
 int main(__attribute__((unused)) int argc, char *argv[])
