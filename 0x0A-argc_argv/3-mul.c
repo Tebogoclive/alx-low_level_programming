@@ -1,27 +1,28 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
  * main - Multiplies 2 args
- * @argc: arg count
- * @argv: args
+ * @argc: argument count
+ * @argv: argument vector
  * Return: Product of arithmetic
  */
 int main(int argc, char *argv[])
 {
-	int x, y, z;
+	int n1 = 0, n2 = 0;
 
-	x = atoi(argv[1]);
-	y = atoi(argv[2]);
-	z = x * y;
-
-	if (argc < 3)
+	if (argc == 3)
+	{
+		n1 = atoi(argv[1]);
+		n2 = atoi(argv[2]);
+		printf("%d\n", n1 * n2);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	printf("%d\n", z);
 
 	return (0);
 }
