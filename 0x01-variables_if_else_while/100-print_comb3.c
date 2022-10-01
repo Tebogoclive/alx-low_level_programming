@@ -1,54 +1,34 @@
 #include <stdio.h>
 
 /**
-* main - program that prints the numbers from 01 to 89
-*
-* Numbers must be separated by , followed by a space
-*
-* Numbers should be printed in ascending order with 2 digits
-*
-* You can only usethe putchar function
-*
-* Return: 0
-*
-*/
-
+  * main - Prints combination of numbers
+  *
+  * Return: Always (Success)
+  */
 int main(void)
-
 {
-	int n1 = 48;
 
-	int n2;
+int c, i;
 
-	int com = 44;
+for (c = '0'; c <= '9'; c++)
+{
+for (i = '0'; i <= '9'; i++)
+{
+if (c < i)
+{
+putchar(c);
+putchar(i);
 
-	while (n1 <= 57)
+if (c != '8' || (c == '8' && i != '9'))
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
 
-	{
-		n2 = n1 + 1;
+putchar('\n');
 
-		while (n2 <= 57)
-
-		{
-			putchar(n1);
-
-			putchar(n2);
-
-			if (n1 != 56 || n2 != 57)
-
-			{
-				putchar(com);
-
-				putchar(32);
-			}
-
-			n2 += 1;
-		}
-
-		n1 += 1;
-	}
-
-	putchar('\n');
-
-	return (0);
+return (0);
 }
