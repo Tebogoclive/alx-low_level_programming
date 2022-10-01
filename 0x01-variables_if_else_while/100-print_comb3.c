@@ -1,33 +1,54 @@
 #include <stdio.h>
+
 /**
+* main - program that prints the numbers from 01 to 89
 *
-* main - program that prints all possible different combinations of 2 digits
+* Numbers must be separated by , followed by a space
+*
+* Numbers should be printed in ascending order with 2 digits
+*
+* You can only usethe putchar function
+*
 * Return: 0
+*
 */
+
 int main(void)
+
 {
-	int c = 0;
-	int f_d;
-	int l_d;
+	int n1 = 48;
 
-	while (c <= 99)
+	int n2;
+
+	int com = 44;
+
+	while (n1 <= 57)
+
 	{
-		f_d = (c / 10 + '0');		
-		l_d = (c % 10 + '0');
+		n2 = n1 + 1;
 
-		if (f_d < l_d)
+		while (n2 <= 57)
+
 		{
-			putchar(f_d);
-			putchar(l_d);
+			putchar(n1);
 
-			if (c != 89)
+			putchar(n2);
+
+			if (n1 != 56 || n2 != 57)
+
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(com);
+
+				putchar(32);
 			}
+
+			n2 += 1;
 		}
-		c++;
+
+		n1 += 1;
 	}
-putchar('\n');
-return (0);
+
+	putchar('\n');
+
+	return (0);
 }
