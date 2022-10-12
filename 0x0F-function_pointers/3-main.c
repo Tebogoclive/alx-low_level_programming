@@ -1,13 +1,14 @@
-#include "3-calc.h"
+nclude "3-calc.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 
 /**
-* main - Entry point
-* @argc: Arg count
-* @argv: Arguments
-* Return: Result after operations
-*/
+ * main - Entry point
+ * @argc: Arg count
+ * @argv: Arguments
+ * Return: Result after operations
+ */
 int main(int argc, char *argv[])
 {
 	int (*oprt)(int, int);

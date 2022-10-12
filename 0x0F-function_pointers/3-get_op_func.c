@@ -3,18 +3,18 @@
 #include <string.h>
 
 /**
-* get_op_func - Find the ops
-* @s: The operator string supplied
-*
-* Return: int
-*/
+ * get_op_func - Find the ops
+ * @s: The operator string supplied
+ *
+ * Return: int
+ */
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},
 		{"*", op_mul},
-		{"/,", op_div},
+		{"/", op_div},
 		{"%", op_mod},
 		{NULL, NULL}
 	};

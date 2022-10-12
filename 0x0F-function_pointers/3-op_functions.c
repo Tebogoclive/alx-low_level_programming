@@ -3,44 +3,47 @@
 #include <stdlib.h>
 
 /**
-* op_add - Return sum
-* @a: Left operand
-* @b: Right operand
-* Return: Sum
-*/
+ * op_add - Returns sum
+ * @a: Left operand
+ * @b: Right operand
+ * Return: Sum
+ */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
 /**
-* op_sub - Returns difference
-* @a: Left operand
-* @b: Right operand
-* Return: Difference
-*/
+ * op_sub - Returns difference
+ * @a: Left operand
+ * @b: Right operand
+ * Return: Difference
+ */
+
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
-* op_mul - Returns product
-* @a: Left operand
-* @b: Right operand
-* Return: product
-*/
+ * op_mul- Returns product
+ * @a: Left operand
+ * @b: Right operand
+ * Return: product
+ */
+
 int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
-* op_div - Returns quotient
-* @a: Left operand
-* @b: Right operand
-* Return: Quottient
-*/
+ * op_div - Returns quotient
+ * @a: Left operand
+ * @b: Right operand
+ * Return: Quotient
+ */
+
 int op_div(int a, int b)
 {
 	if (b == 0)
