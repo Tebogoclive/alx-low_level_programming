@@ -19,7 +19,6 @@ int op_add(int a, int b)
  * @b: Right operand
  * Return: Difference
  */
-
 int op_sub(int a, int b)
 {
 	return (a - b);
@@ -31,7 +30,6 @@ int op_sub(int a, int b)
  * @b: Right operand
  * Return: product
  */
-
 int op_mul(int a, int b)
 {
 	return (a * b);
@@ -43,7 +41,6 @@ int op_mul(int a, int b)
  * @b: Right operand
  * Return: Quotient
  */
-
 int op_div(int a, int b)
 {
 	if (b == 0)
