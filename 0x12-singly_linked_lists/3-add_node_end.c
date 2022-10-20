@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
-* add_node_end - appends new node to the end
-* @head: pointer to head pointer
-* @str: member of struct
-* Return: new node
+ * add_node_end - appends new node to the end
+ * @head: pointer to head pointer
+ * @str: member of struct
+ * Return: new node
 */
 list_t *add_node_end(list_t **head, const char *str)
 {
@@ -13,7 +13,7 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	add->str = strdup(str);
 	add->len = strlen(str);
-	add->next = NUUL;
+	add->next = NULL;
 	if (*head == NULL)
 		*head = add;
 	else
